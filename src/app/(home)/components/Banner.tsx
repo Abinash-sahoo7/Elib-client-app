@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import book from '../../public/book.png';
-import paperbg from '../../public/paper-bg.jpg'
+import book from '../../../../public/book.png';
+import paperbg from '../../../../public/paper-bg.jpg'
 
 function Banner() {
   return (
