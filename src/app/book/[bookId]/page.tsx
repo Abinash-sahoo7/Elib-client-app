@@ -1,6 +1,8 @@
+
 import { Book } from '@/types';
 import Image from 'next/image';
 import React from 'react'
+import DownloadButton from './components/DownloadButton';
 
 async function SingleBookPage({params} : { params :{bookId: string}}) {
     console.log("params" + params);
@@ -28,7 +30,7 @@ async function SingleBookPage({params} : { params :{bookId: string}}) {
             <h1 className='text-5xl font-bold mb-5 leading-[1.1]'>{book.title}</h1>
             <p className='font-semibold'>by {book.author.name}</p>
             <p>{book.description}</p>
-            <button>Download this Book</button>
+            <DownloadButton fileLink={book.file} />
         </div>
         <div className='flex justify-end'>
             <Image sizes='100vh' style={{ width: "auto", height: "auto"}} src={book.coverImage} alt={book.title} width={0} height={0} className='rounded-md border'/>
