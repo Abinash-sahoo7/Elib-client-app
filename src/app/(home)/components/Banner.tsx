@@ -5,7 +5,7 @@ import paperbg from '../../../../public/paper-bg.jpg'
 
 function Banner() {
   return (
-    <div className='max-w-7xl mx-auto py-10'>
+    <div className='max-w-7xl mx-auto py-6'>
         <div className='relative'>
             <Image src={paperbg}
             alt='Banner Image'
