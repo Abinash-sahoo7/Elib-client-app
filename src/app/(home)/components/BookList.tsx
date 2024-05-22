@@ -4,9 +4,7 @@ import BookCard from './BookCard'
 
 async function BookList() {
 
-  const response = await fetch(`${process.env.BACKEND_URL}/books`, {
-    cache: 'no-store'
-  });
+  const response = await fetch(`${process.env.BACKEND_URL}/books`);
   if(!response.ok){
     throw new Error("An error occure while fetching the books");
   }
